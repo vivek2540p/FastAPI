@@ -1,0 +1,52 @@
+{% include 'layout.html' %}
+{% block content %}
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                Register
+            </div>
+            <div class="card-body">
+                <form action="" id="registerForm">
+                    <div class="form-row">
+                        <div class="from-group col-md-6">
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="from-group col-md-6">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="from-group col-md-6">
+                            <label for="firstname">First Name:</label>
+                            <input type="text" id="firstname" name="firstname" class="form-control" required>
+                        </div>
+                        <div class="from-group col-md-6">
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" id="lastname" name="lastname" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="from-group col-md-6">
+                            <label for="role">Role:</label>
+                            <input type="text" id="role" name="role" class="form-control" required>
+                        </div>
+                        <div class="from-group col-md-6">
+                            <label for="phone_number">Number:</label>
+                            <input type="text" id="phone_number" name="phone_number" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+            </div>
+            <div class="card-footer text-muted">
+               <a href="/auth/login-page">Login</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
